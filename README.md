@@ -1,5 +1,37 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## How to make this template
+
+1. create next js application by cli  
+https://nextjs.org/docs/app/getting-started/installation#create-with-the-cli
+```
+% npx create-next-app@latest
+✔ What is your project named? … nextjs-template
+✔ Would you like to use the recommended Next.js defaults? › No, customize settings
+✔ Would you like to use TypeScript? … No / Yes => Yes
+✔ Which linter would you like to use? › ESLint
+✔ Would you like to use React Compiler? … No / Yes => No
+✔ Would you like to use Tailwind CSS? … No / Yes => Yes
+✔ Would you like your code inside a `src/` directory? … No / Yes => Yes
+✔ Would you like to use App Router? (recommended) … No / Yes => Yes
+✔ Would you like to customize the import alias (`@/*` by default)? … No / Yes => Yes
+✔ What import alias would you like configured? … @/*
+```
+
+2. setup Prettier for nextjs  
+https://nextjs.org/docs/app/api-reference/config/eslint#with-prettier
+```
+npm i -D eslint-config-prettier
+```
+Then, add prettier to your existing ESLint config.
+
+3. install prettier  
+https://prettier.io/docs/install
+```
+npm install --save-dev --save-exact prettier
+node --eval "fs.writeFileSync('.prettierrc','{}\n')"
+```
+
 ## Getting Started
 
 First, run the development server:
